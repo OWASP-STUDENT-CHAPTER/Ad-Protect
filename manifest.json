@@ -1,8 +1,8 @@
 {
-    "name": "Adblocker",
+    "name": "Ad-Protect",
     "version": "2.0",
     "description": "Ad blocking Extention for chrome",
-    "permissions": ["webRequest", "webRequestBlocking", "<all_urls>"],
+    "permissions": ["webRequest", "webRequestBlocking", "storage", "<all_urls>"],
     "background": {
         "scripts": ["background.js"]
     },
