@@ -1,5 +1,16 @@
-chrome.webRequest.onBeforeRequest.addListener(
-    function(details) { return { cancel: true }},
-    { urls: ["*://*.https://www.youtube.com/*"] },
-    ["blocking"]
-)
+chrome.webRequest.onBeforeRequest.addListener
+    (function(details) { return { cancel: true }},
+    { urls: defaultFilters },
+    ["blocking"]))
+    const defaultFilters = [
+	"*://*.doubleclick.net/*",
+	"*://partner.googleadservices.com/*",
+	"*://*.googlesyndication.com/*",
+	"*://*.google-analytics.com/*",
+	"*://creative.ak.fbcdn.net/*",
+	"*://*.adbrite.com/*",
+	"*://*.exponential.com/*",
+	"*://*.quantserve.com/*",
+	"*://*.scorecardresearch.com/*",
+	"*://*.zedo.com/*",]
+
