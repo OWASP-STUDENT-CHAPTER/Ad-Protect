@@ -12,5 +12,6 @@ chrome.webRequest.onBeforeRequest.addListener
 	"*://*.exponential.com/*",
 	"*://*.quantserve.com/*",
 	"*://*.scorecardresearch.com/*",
-	"*://*.zedo.com/*",]
+	"*://*.zedo.com/*",
+    ]
 
