@@ -1,10 +1,4 @@
-chrome.webRequest.onBeforeRequest.addListner(
-    function(details){ return { cancel:true}},
-    {urls: filter },
-    ["blocking"]
-)
-
-filter = [
+const filter = [
     "*://*.doubleclick.net/*",
     "*://partner.googleadservices.com/*",
     "*://*.googlesyndication.com/*",
@@ -15,4 +9,12 @@ filter = [
     "*://*.quantserve.com/*",
     "*://*.scorecardresearch.com/*",
     "*://*.zedo.com/*",
-]
+];
+
+chrome.webRequest.onBeforeRequest.addListener(
+    function(details) {
+        return { cancel: true };
+    },
+    { urls: filter },
+    ["blocking"]
+);
