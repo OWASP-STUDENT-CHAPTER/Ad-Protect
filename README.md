@@ -10,7 +10,6 @@ Here's a breakdown of the main functionalities of the ad blocker extension:
 
 1. **Ad blocking**: The extension will use JavaScript to identify and block ads, trackers, and malware on web pages. This will be achieved by analyzing the HTML and CSS code of web pages and identifying patterns that indicate the presence of ads or trackers.
 2. **OpenVPN client**: The extension will include a built-in OpenVPN client that establishes a secure connection between the user's computer and a VPN server. This will encrypt the user's internet traffic and route it through the VPN server, making it difficult for anyone to intercept or monitor the user's activity.
-3. **Firewall**: The extension will include a firewall that blocks unauthorized connections to the user's computer. This will prevent malicious software from communicating with the outside world and compromising the user's privacy.
 
 Technical Stack Requirements
 --------------------------
