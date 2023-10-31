@@ -1,19 +1,13 @@
 {
-    "manifest_version": 3,
     "name": "Ad-Protect",
     "version": "2.0",
-    "description": "Ad blocking Extension for Chrome",
-    "permissions": ["webRequest", "webRequestBlocking", "storage", "activeTab"],
+    "description": "Ad blocking Extention for chrome",
+    "permissions": ["webRequest", "webRequestBlocking", "storage", "<all_urls>"],
     "background": {
-        "service_worker": "background.js"
+        "scripts": ["background.js"]
     },
     "icons": {
         "16": "icons/logo_16x16.png"
-    },
-    "action": {
-        "default_popup": "popup.html",
-        "default_icon": {
-            "16": "icons/logo_16x16.png"
-        }
-    }
+       },
+    "manifest_version": 2
 }
